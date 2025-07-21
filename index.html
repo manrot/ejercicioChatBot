@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chatbot</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- Botón flotante -->
+<button id="chat-toggle">
+  <img src="icons/chat-en-vivo.png" alt="Chatbot" />
+</button>
+
+<!-- Contenedor del Chat -->
+<div id="chat-container">
+  <div id="chat-header">Chatbot Rotman
+    <button id="chat-close" class="button-close">
+     <img src="icons/cerrar.svg" alt="Cerrar" class="icon-close" />
+    </button>
+  </div>
+  <div id="chat-messages">
+    <!-- Mensaje inicial -->
+    <div class="message bot">
+      <img src="icons/robot.png" alt="Bot" />
+      <div>¿Cómo puedo ayudarte?</div>
+    </div>
+  </div>
+  <div id="chat-input">
+    <input type="text" id="message-input" placeholder="Escribe tu consulta..." autofocus />
+    <button id="send-button" class="send-btn" title="Enviar"><img src="icons/enviar.png"/></button>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
