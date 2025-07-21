@@ -1,0 +1,155 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Botón flotante */
+#chat-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0076d7c1;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+#chat-toggle img {
+  width: 50px;
+  height: 50px;
+      margin-top: 4px;
+}
+
+/* Ventana del chat */
+#chat-container {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 320px;
+  height: 400px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  overflow: hidden;
+  z-index: 999;
+}
+
+#chat-header {
+
+background-color: #0078d7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #005fa6;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  font-size: 18px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#chat-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background: #f4f8fb;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  max-width: 75%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  position: relative;
+  font-size: 14px;
+}
+
+.bot {
+  background: #cde9f9;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bot img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.user {
+  background: #e8f4fb; 
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+#chat-input {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  gap: 5px;
+}
+
+#chat-input input {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+#chat-input button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.send-btn img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.button-close{
+  position: absolute;
+  right: 10px; 
+  top: 14px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.icon-close{
+  width: 20px;
+  height: 20px;
+}
+.send-btn {
+  background: none;
+  border: none;
+  padding: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
